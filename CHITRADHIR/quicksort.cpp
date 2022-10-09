@@ -10,7 +10,7 @@ int main(){
     int *input = new int[n];
     
     for(int i = 0; i < n; i++) {
-        cin >> input[i];
+        cin >>    input[i];
     }
     
     quickSort(input, n);
