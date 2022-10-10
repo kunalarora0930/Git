@@ -2,7 +2,7 @@
 
 # Steps to Contribute in repository :
 
-### Star this repository🙂
+### Star this repository🙃
 ### Fork this repo (button on top) 🍴
 ### Clone on your local machine 👩🏻‍💻
 `git clone https://github.com/kunalarora0930/Git.git`
