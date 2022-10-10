@@ -4,7 +4,7 @@
 
 ### Star this repository🙂
 ### Fork this repo (button on top) 🍴
-### Clone on your local machine<br>
+### Clone on your local machine 👩🏻‍💻
 `git clone https://github.com/kunalarora0930/Git.git`
 
 ### Navigate to project directory.🧑🏻‍👨🏻‍💻
