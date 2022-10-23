@@ -1,8 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int binary_search(int arr[], int n, int key) {
-    int s = 0;
+int binary_search(int arr[], int n, int key)
+
+{
+    int s;
+    s=0;
     int e = n;
     while (s<=e) {
         int mid = (s+e)/2;
