@@ -5,6 +5,7 @@ class node{
 
     public:
     int data;
+    
     node* next;
 };
 
@@ -37,15 +38,20 @@ void queue::enqueue(int x) {
 
     node* temp = new node;
     temp->data = x;
+    
     temp->next = NULL;
+    
     rear->next = temp;
     rear = temp;
 
 }
 
 
-int queue::dequeue(){
-    if(front == rear) {
+int queue::dequeue()
+{
+    if(front == rear)
+    
+    {
         int d = front->data;
         delete rear;
         front = NULL;
@@ -60,11 +66,13 @@ int queue::dequeue(){
     return d;
 }
 
-bool queue::isEmpty() {
+bool queue::isEmpty()
+{
     return (front==NULL && rear==NULL);
 }
 
-int queue::peek() {
+int queue::peek()
+{
     if (front) return front->data;
 }
 
