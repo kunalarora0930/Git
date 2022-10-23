@@ -45,7 +45,15 @@ void queue::enqueue(int x) {
     rear = temp;
 
 }
+int length(Node *head) {
+    // Write your code here
 
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+//QUEUE di pahan di
 
 int queue::dequeue()
 {
