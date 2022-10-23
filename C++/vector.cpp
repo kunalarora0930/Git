@@ -10,7 +10,7 @@ void print_vector(vector<int> &v) {      // funtion to print elements of a vecto
 }
 
 int main() {
-    
+    int kunnu;
     int size;
     vector<int> myvector;
 
@@ -19,7 +19,9 @@ int main() {
     cout << "Enter the size of vector: ";
     cin >> size;
     int x;
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) 
+    {
+        
         cin >> x;
         myvector.push_back(x);
     }
@@ -32,6 +34,8 @@ int main() {
     print_vector(myvector);
     myvector.pop_back();
     cout << "After pop_back()\n";
+    
+    
     print_vector(myvector);
     //------------------------------------------
 
