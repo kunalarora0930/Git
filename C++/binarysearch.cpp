@@ -10,10 +10,16 @@ int binary_search(int arr[], int n, int key)
     while (s<=e) {
         int mid = (s+e)/2;
         
-        if(arr[mid] == key) {
+        if(arr[mid] == key)
+        
+        
+        {
             return mid;
         }
-        else if(arr[mid] > key) {
+        else if(arr[mid] > key)
+        
+        
+        {
             e = mid - 1;
         }
         else {
@@ -22,8 +28,29 @@ int binary_search(int arr[], int n, int key)
     }
     return -1;
 }
+int length(Node *head)
 
-int main() {
+
+{
+    // Write your code here
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+int length(Node *head) {
+    // Write your code here
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+//hupp kunnu
+
+int main()
+{
     int n;
     cin >> n;
     int arr[n];
