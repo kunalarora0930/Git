@@ -18,21 +18,25 @@ int aaa=0;
   
     int *input = new int[n];
     
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++)
+    {
         cin >>    input[i];
     }
     
     quickSort(input, n);
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++) 
+    {
         cout << input[i] << " ";
     }
     
     delete [] input;
+    cout<<"worst case time complexity of Quick sort is O(n^2)"<<endl;
 
 }
 
 
-void quickSort(int input[], int size) {
+void quickSort(int input[], int size)
+{
 
     if(size==0||size==1)
         return;
@@ -59,6 +63,7 @@ void quickSort(int input[], int size) {
         i++;
         j--;
         }
+        
     }
     quickSort(input,counter);
     quickSort(input+counter+1,size-1-counter);
