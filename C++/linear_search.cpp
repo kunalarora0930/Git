@@ -3,7 +3,8 @@ using namespace std;
 
 int linear_search(int arr[], int n, int key) {
     for (int i = 0; i<n; i++) {
-        if (arr[i] == key) {
+        if (arr[i] == key)
+        {
             return i;
         }
     }
@@ -11,11 +12,11 @@ int linear_search(int arr[], int n, int key) {
 }
 
 int main() {
-    int n;
-    int k = n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i<n; i++) {
+    int M;
+    int k = M;
+    cin >> M;
+    int arr[M];
+    for (int i = 0; i<M; i++) {
         cin >> arr[i];
     }
     int key;
