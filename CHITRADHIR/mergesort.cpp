@@ -6,7 +6,9 @@ void merge(int *part1, int size1, int *part2, int size2, int*output, int n)
 {
     int i=0;
     int j=0;
+	
     int k=0;
+	int lol=0;
     while(i<size1&&j<size2)
     {
         if(part1[i]<part2[j])
@@ -16,11 +18,13 @@ void merge(int *part1, int size1, int *part2, int size2, int*output, int n)
         else
         {
             output[k++]=part2[j++];
+		
         }
     }
     while(j<size2)
     {
         output[k++]=part2[j++];
+	    
     }
     while(i<size1)
     {
