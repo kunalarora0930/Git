@@ -2,6 +2,10 @@
 using namespace std;
 int main()
 {
-    cout<<"HI"<<endl;
-    cout<<"Happy Hacking"<<endl;
+
+
+    cout<<"HI";
+    cout<<"LIFE IS A RACE"<<endl;
+    cout<<"Ghanta nahi"<<enld;
+
 }

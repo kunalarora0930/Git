@@ -9,14 +9,26 @@ public:
     Node *right;
     Node(int x)
     {
+        
         left = NULL;
+        
         right = NULL;
         data = x;
+        
     }
 };
 
 int main()
 {
+    int length(Node *head) {
+    // Write your code here
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+
     Node *root = new Node(1);
 
     root->left = new Node(82);
