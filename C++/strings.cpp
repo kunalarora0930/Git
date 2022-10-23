@@ -3,7 +3,15 @@
 #include <algorithm>
 using namespace std;
 
-int main() {
+int main() {int length(Node *head) {
+    // Write your code here
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+
     //---------------I/O---------------
     // string str1;
     // cin >> str1;
