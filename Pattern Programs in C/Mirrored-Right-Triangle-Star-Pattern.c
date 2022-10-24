@@ -3,6 +3,16 @@
 int main()  
 {  
     int n,m=1;  
+  
+  
+  
+  
+  printf("The Bigger, the better"):
+  
+  
+  
+  
+  
     printf("Enter the number of rows");  
     scanf("%d",&n);  
     for(int i=n;i>=1;i--)  
@@ -12,9 +22,15 @@ int main()
           printf(" ");  
         }  
         for(int k=1;k<=m;k++)  
+          
+          
+          
+          
         {  
             printf("*");  
         }  
+      
+      
         printf("\n");  
         m++;  
     }  
