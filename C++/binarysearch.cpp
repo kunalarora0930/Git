@@ -6,8 +6,10 @@ int binary_search(int arr[], int n, int key)
 {
     int shreya=69;
     int kunnuuu=0.69;
-    cout<<"SK ya KS"<<endl;
+    int kunreya=6969;
     
+    cout<<"SK ya KS"<<endl;
+    cout<<"S loves K"<<endl;
     int s;
     s=0;
     int e = n;
