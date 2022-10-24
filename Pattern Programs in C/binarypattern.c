@@ -1,8 +1,10 @@
 #include <stdio.h>
 int main()
 {
+    
     int i, j, n;
-
+printf("Faltuu pattern");
+    
     printf("Enter the number of rows: ");
     scanf("%d", &n);
 
@@ -11,9 +13,11 @@ int main()
         for (j = i; j >= 1; j--)
         {
             printf("%d ", j % 2);
+            
         }
 
         printf("\n");
+        
     }
     return 0;
 }
