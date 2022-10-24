@@ -41,7 +41,16 @@ int length(Node *head)
 
 
 int main() {
+
     cout<<"bro length matters"<<endl;
+
+
+    cout<<"length matters"<<endl;
+    
+    
+    cout<<"That's what she said"<<endl;
+
+
     char s[100000];
     cin >> s;
     removeConsecutiveDuplicates(s);

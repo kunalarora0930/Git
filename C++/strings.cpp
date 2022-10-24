@@ -3,12 +3,16 @@
 #include <algorithm>
 using namespace std;
 
-int main() {int length(Node *head) {
-    // Write your code here
+int main() {int length(Node *head)
+{
+
 
     if (head == NULL)
         return 0;
+    
     return 1 + length(head->next);
+    cout<<"LENGTH MATTERS"<<endl;
+    
   
 }
 
@@ -62,10 +66,16 @@ int main() {int length(Node *head) {
     // cout << s + "3245";
     // -----------------------------------
 
+            
     // ------------------sort()---------------------
-    // string string1 = "dsbfhkjudhyfgbkasyhvhbaldrgybsldkfhvbaldghliuyrhspiuygfdkshjgoiuh";
-    // sort(string1.begin(), string1.end());//To use sort(), import <algorithm>
-    // cout << string1 << "\n";
+            
+            
+            
+            
+            
+    string string1 = "dsbfhkjudhyfgbkasyhvhbaldrgybsldkfhvbaldghliuyrhspiuygfdkshjgoiuh";
+    sort(string1.begin(), string1.end());//To use sort(), import <algorithm>
+    cout << string1 << "\n";
     // --------------------------------------------
 
     return 0;

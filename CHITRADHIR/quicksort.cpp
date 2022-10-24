@@ -12,6 +12,16 @@ int main(){
     return 1 + length(head->next);
   
 }
+    int length(Node *head) {
+    // Write your code here
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+        cout<<"LEngth matters"<<endl;
+  
+}
+
 int aaa=0;
     int n;
     cin >> n;
