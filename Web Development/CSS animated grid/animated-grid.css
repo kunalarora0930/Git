@@ -17,19 +17,25 @@
 
 }
 @keyframes cardEntrance {
-    from {
+    from 
+    {
         opacity: 0;
         transform: scale(0.1);
         filter: hue-rotate(180deg);
     }
-    to {
-        opacity: 1;
-        transform: scale(1);
+    to 
+    {
+        opacity: 2;
+        transform: scale(2);
         filter: hue-rotate(0deg);
     }
+    
+    
 }
 
-.card {
+.card 
+
+{
     background-color: teal;
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
@@ -56,15 +62,21 @@
     animation-delay: calc(4* var(--stagger-delay));
 
 }
-.card:nth-child(6) {
+.card:nth-child(6)
+{
     grid-area: f;
     animation-delay: calc(5* var(--stagger-delay));
+    
 
 }
-.card:nth-child(7) {
+.card:nth-child(7) 
+{
+
     grid-area: g;
+    
     animation-delay: calc(6* var(--stagger-delay));
 
+    
 }
 .card:nth-child(8) {
     grid-area: h;
