@@ -4,6 +4,10 @@ using namespace std;
 int binary_search(int arr[], int n, int key)
 
 {
+    int shreya=69;
+    int kunnuuu=0.69;
+    cout<<"SK ya KS"<<endl;
+    
     int s;
     s=0;
     int e = n;
@@ -14,12 +18,18 @@ int binary_search(int arr[], int n, int key)
         
         
         {
+            
+            
+            
+            
             return mid;
         }
         else if(arr[mid] > key)
         
         
         {
+            
+            
             e = mid - 1;
         }
         else {
@@ -32,6 +42,7 @@ int length(Node *head)
 
 
 {
+    
     // Write your code here
 
     if (head == NULL)
@@ -39,6 +50,10 @@ int length(Node *head)
     return 1 + length(head->next);
   
 }
+
+
+
+
 int length(Node *head) {
     // Write your code here
 

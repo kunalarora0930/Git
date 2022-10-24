@@ -11,7 +11,23 @@ int length(Node *head) {
 
 int main()
 {
+
 cout<<"length to tshirt ke liye daali hai"<<endl;
+cout<<"length matters"<<endl;
+    
+
+cout<<"8 figure rich nigga"<<endl;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     cout<<"HI";
     cout<<"LIFE IS A RACE"<<endl;

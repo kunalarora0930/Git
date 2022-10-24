@@ -8,6 +8,25 @@ class node{
     
     node* next;
 };
+int length(Node *head)
+{
+
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+int length(Node *head)
+{
+
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  cout<<"Length matters"<<endl;
+}
+
 
 class queue{
     node* front;
