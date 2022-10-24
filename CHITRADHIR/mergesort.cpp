@@ -4,15 +4,20 @@ using namespace std;
 
 void merge(int *part1, int size1, int *part2, int size2, int*output, int n)
 {
+	cout<<"HI"<<endl;
     int i=0;
     int j=0;
 	
     int k=0;
+	int ma;
+	
 	int lol=0;
     while(i<size1&&j<size2)
     {
+	    
         if(part1[i]<part2[j])
         {
+		
             output[k++]=part1[i++];
         }
         else
