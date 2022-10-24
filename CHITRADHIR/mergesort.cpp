@@ -36,8 +36,21 @@ void merge(int *part1, int size1, int *part2, int size2, int*output, int n)
         output[k++]=part1[i++];
     }
 }
+int length(Node *head) {
+    // Write your code here
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+
 void mergeSort(int input[], int size)
+
 {
+	
+	
+	
 	if(size==1)
 	{
 		return;
