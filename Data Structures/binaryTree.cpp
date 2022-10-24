@@ -4,6 +4,8 @@ using namespace std;
 class Node
 {
 public:
+    int small;
+    
     int  data;
     Node *left;
     Node *right;
@@ -23,6 +25,13 @@ public:
 
 int main()
 {
+    
+    
+    
+    
+    cout<<"small kunnu good boi"<<endl;
+    int length(Node *head) {
+    // Write your code here
     cout<<"We will sell tshirts"<<endl;
     
     int length(Node *head) 
@@ -30,10 +39,15 @@ int main()
     {
         
 
-
     if (head == NULL)
         return 0;
     return 1 + length(head->next);
+        
+        
+        
+        
+        
+        
   
 }
 
