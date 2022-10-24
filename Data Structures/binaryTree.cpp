@@ -10,6 +10,9 @@ public:
     Node(int x)
     {
         
+        
+        
+        
         left = NULL;
         
         right = NULL;
@@ -20,8 +23,13 @@ public:
 
 int main()
 {
-    int length(Node *head) {
-    // Write your code here
+    cout<<"We will sell tshirts"<<endl;
+    
+    int length(Node *head) 
+
+    {
+        
+
 
     if (head == NULL)
         return 0;
