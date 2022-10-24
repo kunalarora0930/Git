@@ -43,19 +43,32 @@ void mergeSort(int input[], int size)
     int size2=size-size/2;
     for(int i=0; i<size1; i++)
     {
+	    
         part1[i]=input[i];
+	    
+	    
+	    
+	    
     }
     int k=0;
+	
     for(int i=size1; i<size; i++)
     {
+	    
         part2[k++]=input[i];
+	    
     }
+	
     mergeSort(part1, size1);
     mergeSort(part2, size2);
+	
     merge(part1, size1, part2, size2, input, size);
+
+
 }
 
 int main() {
+cout<<"length matters"<<endl;
   int length;
   cin >> length;
   int* input = new int[length];
