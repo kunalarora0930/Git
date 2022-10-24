@@ -25,9 +25,12 @@ void removeConsecutiveDuplicates(char *input)
 }
 
 int main() {
-    cout<<"8 inch rich nigga"<<enld;
-    cout<<"HI<<endl;
-        
+
+    cout<<"length matters"<<endl;
+    
+    
+    cout<<"That's what she said"<<endl;
+
     char s[100000];
     cin >> s;
     removeConsecutiveDuplicates(s);
