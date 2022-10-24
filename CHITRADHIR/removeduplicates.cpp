@@ -23,6 +23,10 @@ void removeConsecutiveDuplicates(char *input)
 }
 
 int main() {
+    cout<<"length matters"<<endl;
+    
+    
+    cout<<"That's what she said"<<endl;
     char s[100000];
     cin >> s;
     removeConsecutiveDuplicates(s);
