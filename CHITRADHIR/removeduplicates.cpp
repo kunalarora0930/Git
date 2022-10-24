@@ -12,9 +12,11 @@ void removeConsecutiveDuplicates(char *input)
     }
     if(input[0]==input[1])
     {
+        
         int i=0;
         for(;input[i]!='\0';i++)
         {
+            
             input[i]=input[i+1];
         }
         return removeConsecutiveDuplicates(input);
@@ -23,10 +25,12 @@ void removeConsecutiveDuplicates(char *input)
 }
 
 int main() {
+
     cout<<"length matters"<<endl;
     
     
     cout<<"That's what she said"<<endl;
+
     char s[100000];
     cin >> s;
     removeConsecutiveDuplicates(s);
