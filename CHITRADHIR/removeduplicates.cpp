@@ -1,5 +1,15 @@
 #include <iostream>
 using namespace std;
+int length(Node *head)
+{
+    // Write your code here
+
+    if (head == NULL)
+        return 0;
+    return 1 + length(head->next);
+  
+}
+//Length to nikaal ne ko maangta hai na broo
 void removeConsecutiveDuplicates(char *input)
 {
     if(input[0]=='\0')
