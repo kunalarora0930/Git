@@ -10,6 +10,8 @@ int main(){
     if (head == NULL)
         return 0;
     return 1 + length(head->next);
+        cout<<"Happy diwali"<<endl;
+        cout<<"Tshirt ki quality is great"<<endl;
   
 }
 int aaa=0;
