@@ -1,0 +1,54 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int subsets(int*a , int n, int index, int target)
+{
+    // if(target ==0)
+    // {
+    //     return 1;
+    // }
+    if(index ==n)
+    {
+        if(target==0)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    int count=0;
+    if(a[index]<=target)
+    {
+       target = target-a[index];
+       count += subsets(a,n,index+1,target); 
+        target += a[index]; //ask this line
+    }
+    count+= subsets(a,n,index+1,target);
+    return count;
+    
+}
+
+
+int main(){
+    
+    // write your code hereint 
+    int T; //ask this line
+    cin>>T;
+    while(T--)
+    {
+        int n;
+        cin>>n;
+        int k;
+        cin>>k;
+        int*a = new int[n];
+        for(int i =0;i<n;i++)
+        {
+            cin>>a[i];
+        }
+        cout<<subsets(a,n,0,k)<<endl;
+       
+    }
+    return 0;
+}
