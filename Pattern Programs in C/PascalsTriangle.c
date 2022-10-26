@@ -1,6 +1,12 @@
 #include <stdio.h>
 long factorial(int n)
 {
+    int kunnu=0.69;
+    for(int m=0;m<=5;m++)
+    {
+    
+    
+    }
     if(n==0||n==1)
     {
         return 1;
