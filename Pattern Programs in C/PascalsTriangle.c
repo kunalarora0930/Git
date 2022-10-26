@@ -17,6 +17,9 @@ int ncr(int n ,int r)
 }
 int main()
 {
+    int kunalSir=0.69;
+    int shreyu=69;
+    printf("SEX IN THE CITY");
     int n, i, j, k;
     printf("\n Enter the number of rows:");
     scanf("%d", &n);
