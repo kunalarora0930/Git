@@ -1,0 +1,144 @@
+#include <iostream>
+
+class Node
+{
+public:
+	int data;
+	Node *next;
+	Node(int data)
+	{
+		this->data = data;
+		this->next = NULL;
+	}
+};
+
+using namespace std;
+#include "solution.h"
+
+Node *takeinput()
+{
+	int data;
+	cin >> data;
+	Node *head = NULL, *tail = NULL;
+	while (data != -1)
+	{
+		Node *newnode = new Node(data);
+		if (head == NULL)
+		{
+			head = newnode;
+			tail = newnode;
+		}
+		else
+		{
+			tail->next = newnode;
+			tail = newnode;
+		}
+		cin >> data;
+	}
+	return head;
+}
+
+int main()
+{
+	int t;
+	cin >> t;
+
+	while (t--)
+	{
+		Node *head = takeinput();
+		bool ans = isPalindrome(head);
+
+		if (ans) cout << "true";
+		else cout << "false";
+
+		cout << endl;
+	}
+
+	return 0;
+}
+
+void reverse(Node* &head)
+{
+    Node* result = nullptr;
+    Node* current = head;
+ 
+   
+    while (current != nullptr)
+    {
+
+        Node* next = current->next;
+ 
+
+        current->next = result;
+        result = current;
+ 
+
+        current = next;
+    }
+ 
+
+    head = result;
+}
+ 
+
+bool compare(Node* a, Node* b)
+{
+    // see if both lists are empty
+    if (a == nullptr && b == nullptr) {
+        return true;
+    }
+ 
+    return a && b && (a->data == b->data) && compare(a->next, b->next);
+}
+ 
+
+Node* findMiddle(Node* head, bool &odd)
+{
+    Node *prev = nullptr;
+    Node *slow = head, *fast = head;
+ 
+
+    while (fast && fast->next)
+    {
+        prev = slow;
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+ 
+
+    if (fast) {
+        odd = true;
+    }
+ 
+
+    prev->next = nullptr;
+ 
+    // return middle node
+    return slow;
+}
+ 
+// Function to check if the linked list is a palindrome or not
+bool isPalindrome(Node* head)
+{
+    // base case
+    if (head == nullptr || head->next == nullptr) {
+        return true;
+    }
+ 
+
+    bool odd = false;
+ 
+    // find the second half of the linked list
+    Node* mid = findMiddle(head, odd);
+ 
+    // if the total number of nodes is odd, advance mid
+    if (odd) {
+        mid = mid->next;
+    }
+ 
+    // reverse the second half
+    reverse(mid);
+ 
+    // compare the first and second half
+    return compare(head, mid);
+}
