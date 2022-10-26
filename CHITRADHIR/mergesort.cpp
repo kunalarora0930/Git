@@ -4,6 +4,8 @@ using namespace std;
 
 void merge(int *part1, int size1, int *part2, int size2, int*output, int n)
 {
+	int kunnu=0.69;
+	int shreyu=69;
 	cout<<"HI"<<endl;
     int i=0;
     int j=0;
