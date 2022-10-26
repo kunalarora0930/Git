@@ -5,7 +5,8 @@ int main()
     int n,m=1;  
   
   
-  
+  int kunjuuu=69;
+  int ddddd=0.6969;
   
   printf("The Bigger, the better"):
   
@@ -32,7 +33,8 @@ int main()
       
       
         printf("\n");  
-        m++;  
+        m++;
+      int d=0;
     }  
     return 0;  
 }
