@@ -1,0 +1,65 @@
+int knapsack(int* weight, int* value, int n, int maxWeight) {
+    int **ans = new int*[n + 1];
+    for(int i = 0; i <= n; ++i)
+    {
+        ans[i] = new int[maxWeight + 1];
+    }
+    
+    // row: 
+    
+    for(int i = 0; i <= maxWeight; ++i)
+    {
+        ans[0][i] = 0;
+    }
+    
+    // col :
+    
+    for(int i = 0; i <= n; ++i)
+    {
+        ans[i][0] = 0;
+    }
+    
+    for(int i = 1; i <= n; ++i)
+    {
+        for(int j = 1; j <= maxWeight; ++j)
+        {
+            if(weight[i - 1] > j)
+            {
+                ans[i][j] = ans[i - 1][j];
+            }
+            else
+            {
+            	ans[i][j] = max(ans[i - 1][j - weight[i - 1]] + value[i - 1], ans[i - 1][j]);
+            }
+        }
+    }
+    
+    return ans[n][maxWeight];  
+}#include <cstring>
+#include <iostream>
+using namespace std;
+
+#include "solution.h"
+
+int main() {
+    int n;
+    cin >> n;
+    int* wt = new int[n];
+    int* val = new int[n];
+
+    for (int i = 0; i < n; i++) {
+        cin >> wt[i];
+    }
+
+    for (int j = 0; j < n; j++) {
+        cin >> val[j];
+    }
+
+    int w;
+    cin >> w;
+
+    cout << knapsack(wt, val, n, w) << "\n";
+
+    delete[] wt;
+    delete[] val;
+}
