@@ -1,5 +1,8 @@
 #include <stdio.h>
 int main() {
+   cout<<"HI"<<endl;
+   int aaa=0;
+   int kunnu=0.069;
    int rows, i, j, space;
    printf("this is a triangle");
    

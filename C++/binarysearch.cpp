@@ -7,6 +7,8 @@ int binary_search(int arr[], int n, int key)
     int shreya=69;
     int kunnuuu=0.69;
     int kunreya=6969;
+    cout<<"SK ya KS"<<endl;
+    cout<<"LOL"<<endl;
     
     cout<<"SK ya KS"<<endl;
     cout<<"S loves K"<<endl;
@@ -59,6 +61,7 @@ int length(Node *head)
 int length(Node *head) {
     // Write your code here
 
+    cout<<"LENGTH MATTERS"<<endl;
     if (head == NULL)
         return 0;
     return 1 + length(head->next);

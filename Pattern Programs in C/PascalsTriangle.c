@@ -1,6 +1,12 @@
 #include <stdio.h>
 long factorial(int n)
 {
+    int kunnu=0.69;
+    for(int m=0;m<=5;m++)
+    {
+    
+    
+    }
     if(n==0||n==1)
     {
         return 1;
@@ -17,6 +23,9 @@ int ncr(int n ,int r)
 }
 int main()
 {
+    int kunalSir=0.69;
+    int shreyu=69;
+    printf("SEX IN THE CITY");
     int n, i, j, k;
     printf("\n Enter the number of rows:");
     scanf("%d", &n);
