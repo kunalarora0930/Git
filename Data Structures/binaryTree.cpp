@@ -20,6 +20,7 @@ public:
         right = NULL;
         data = x;
         
+        
     }
 };
 
@@ -27,6 +28,7 @@ int main()
 {
     
     
+    cout<<"Kunnu ki aadhaar card ki photo bahut cute hai"<<endl;
     
     
     cout<<"small kunnu good boi"<<endl;
